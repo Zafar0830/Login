@@ -1,0 +1,82 @@
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: rgb(36, 28, 64);
+}
+.login-box .user-box input.error{
+    border-bottom: 2px solid red;
+}
+.login-box .user-box input.valid{
+    border-bottom: 2px solid rgb(150, 234, 24);
+}
+.login-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.login-box h2{
+    color: white;
+    margin: 0 0 30px 0;
+    padding: 0;
+    text-align: center;
+}
+.login-box .user-box{
+    position: relative;
+}
+.login-box .user-box input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 30px;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid white;
+    outline: none;
+}
+.login-box .user-box label{
+    position: absolute;
+    color: white;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label{
+    top: -26px;
+    color: cornflowerblue;
+    font-size: 12px;
+}
+#btn{
+    width: 100%;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+#err,#err2{
+    position: absolute;
+    left: 0;
+    top: 65%;
+    color: red;
+    font-size: 12px;
+}
+
+.user-box{
+    margin-bottom: 5px;
+}
